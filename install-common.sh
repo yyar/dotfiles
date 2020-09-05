@@ -7,10 +7,10 @@ mkdir -p ~/.config/alacritty && ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.con
 ~/.dotfiles/tmux/install-tmux-conf.sh
 
 # TODO: setting zshrc
-rm ~/.zshrc || ln -s ~/.dotfiles/zshrc ~/.zshrc
+rm ~/.zshrc ; ln -s ~/.dotfiles/zshrc ~/.zshrc
 
 # TODO: setting vimrc
-rm ~/.vimrc || ln -s ~/.dotfiles/vimrc ~/.vimrc
+rm ~/.vimrc ; ln -s ~/.dotfiles/vimrc ~/.vimrc
 
 
 # TODO: check this computer is in home or not
