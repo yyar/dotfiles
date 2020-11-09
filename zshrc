@@ -14,7 +14,7 @@ ZSH_THEME="random"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "half-life" "amuse" "tonotdo" "simple" )
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "half-life" "simple" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,8 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # for fzf
-[[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
-[[ -f /usr/share/fzf/completion.zsh ]] && source /usr/share/fzf/completion.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -119,3 +118,5 @@ if [[ $OS_TYPE == "Linux" ]]; then
   alias pbcopy='xclip -i -selection clipboard'
   alias pbpaste='xclip -o -selection clipboard'
 fi
+
+[[ -f $HOME/.dotfiles/office/zshrc ]] && source $HOME/.dotfiles/office/zshrc

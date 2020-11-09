@@ -6,12 +6,18 @@ mkdir -p ~/.config/alacritty && ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.con
 
 ~/.dotfiles/tmux/install-tmux-conf.sh
 
+# Install fzf manually
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 # TODO: setting zshrc
 rm ~/.zshrc ; ln -s ~/.dotfiles/zshrc ~/.zshrc
 
 # TODO: setting vimrc
 rm ~/.vimrc ; ln -s ~/.dotfiles/vimrc ~/.vimrc
 
+# TODO: setting ideavimrc
+rm ~/.ideavimrc ; ln -s ~/.dotfiles/ideavimrc ~/.ideavimrc
 
 # TODO: check this computer is in home or not
 git config --global user.email 'yymjar@gmail.com'

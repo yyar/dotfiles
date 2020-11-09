@@ -19,6 +19,9 @@
 ## Mouse
 * Natural Scrolling
 
+## Skip grub
+* add `GRUB_DISABLE_OS_PROBER=true` in `/etc/default/grub` and run `sudo update-grub`
+
 ## Reference
 * https://luckyyowu.tistory.com/409
 

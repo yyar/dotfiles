@@ -1,0 +1,70 @@
+source ~/.vimrc
+
+set number
+set incsearch hlsearch
+set ignorecase smartcase
+" set clipboard=unnamed
+set scrolloff=5
+set showmode
+set surround
+set multiple-cursors
+set commentary
+
+inoremap jk <Esc>
+vnoremap jk <Esc>
+
+noremap  <c-f> <c-d>
+noremap  <c-b> <c-u>
+" VimMotionJump{Next,Previous}
+nnoremap <c-p> <c-i>
+nnoremap <c-[> <c-t>
+nnoremap <tab> <c-w>w
+
+nnoremap Y y$
+nnoremap Q @q
+
+nnoremap [c :action VcsShowPrevChangeMarker<cr>
+nnoremap ]c :action VcsShowNextChangeMarker<cr>
+
+nnoremap gcc :action CommentByLineComment<cr>
+
+nnoremap <leader>oi :action OptimizeImports<cr>
+nnoremap <leader><leader>f :action ReformatCode<cr> 
+nnoremap <leader>su :action ShowUsages<cr>
+nnoremap <leader>cv :action ChangeView<cr>
+nnoremap <leader>ss :action FileStructurePopup<cr>
+
+nnoremap [d :action QuickImplementations<cr>
+nnoremap ]d :action QuickImplementations<cr>
+
+nnoremap <leader>fu :action FindUsages<cr>
+nnoremap <leader>bb :action ToggleLineBreakpoint<cr>
+nnoremap <leader>br :action ViewBreakpoints<cr>
+nnoremap <leader>ic :action InspectCode<cr>
+nnoremap <leader>re :action RenameElement<cr>
+nnoremap <leader>rf :action RenameFile<cr>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction<cr>
+nnoremap <leader>mv :action ActivateMavenProjectsToolWindow<cr>
+nnoremap <leader>dc :action ChooseDebugConfiguration<cr>
+nnoremap <leader>rc :action ChooseRunConfiguration<cr>
+nnoremap <leader>q  :action CloseActiveTab<cr>
+nnoremap <C-O> :action GotoClass<cr>
+nnoremap <C-S-O> :action GotoFile<cr>
+nnoremap <leader>gi :action GotoImplementation<cr>
+nnoremap <leader>gs :action GotoSuperMethod<cr>
+nnoremap <leader>gd :action GotoDeclaration<cr>
+nnoremap <leader>gt :action GotoTest<cr>
+nnoremap <leader>tl Vy<cr>:action ActivateTerminalToolWindow<cr>
+vnoremap <leader>tl y<cr>:action ActivateTerminalToolWindow<cr>
+nnoremap ]e :action GotoNextError<cr>
+nnoremap [e :action GotoPreviousError<cr>
+
+nnoremap ]b :action PreviousTab<cr>
+nnoremap [b :action NextTab<cr>
+
+" multiple-cursor extension for mac
+map <C-N>  <A-N>
+map <C-P>  <A-P>
+map <C-X>  <A-X>
+map g<C-N> g<A-N>
+
