@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update -y && sudo apt upgrade -y
 
 # seperate listing packages to other file
-sudo apt install -y git vim tmux curl zsh gnome-tweaks fonts-powerline fzf ripgrep silversearcher-ag cmake tig
+sudo apt install -y git vim tmux curl zsh gnome-tweaks fonts-powerline fzf ripgrep silversearcher-ag cmake tig tree fd-find
 
 sudo apt install -y qutebrowser
 $(dirname $(which $0))/install-chrome.sh
