@@ -14,5 +14,6 @@ $(dirname $(which $0))/install-slack.sh
 ln -s ~/.dotfiles/linux/Xmodmap ~/.Xmodmap
 # /usr/bin/setxkbmap -option "ctrl:nocaps"
 
+timedatectl set-ntp true
 
 

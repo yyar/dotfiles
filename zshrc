@@ -72,7 +72,7 @@ fi
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux z)
+plugins=(git tmux z poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,3 +119,11 @@ if [[ $OS_TYPE == "Linux" ]]; then
   alias pbcopy='xclip -i -selection clipboard'
   alias pbpaste='xclip -o -selection clipboard'
 fi
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+eval "$(pyenv virtualenv-init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
