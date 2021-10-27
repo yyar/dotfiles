@@ -88,7 +88,7 @@ window:
 
 # Font configuration
 font:
-  size: 16
+  size: 20
   # Normal (roman) font face
   normal:
     # Font family
