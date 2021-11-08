@@ -21,7 +21,10 @@ endif
 call plug#begin('~/.vim/bundle')
 
 " Essential
-Plug '~/.fzf'
+" TODO: Divide a case of mac or linux
+set rtp+=/usr/local/opt/fzf
+" Plug '~/.fzf'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
@@ -54,7 +57,8 @@ call plug#end()
 set background=dark
 
 if has("gui_running")
-    colorscheme Tomorrow-Night
+    colorscheme gruvbox
+    set gfn=Space\ Mono\ for\ Powerline:h15
 else
     colorscheme iceberg
     let g:airline_theme='iceberg'

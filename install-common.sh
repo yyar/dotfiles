@@ -7,6 +7,7 @@ mkdir -p ~/.config/alacritty && ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.con
 ~/.dotfiles/tmux/install-tmux-conf.sh
 
 # Install fzf manually
+# TODO: do not install in macos
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
