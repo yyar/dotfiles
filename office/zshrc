@@ -1,6 +1,18 @@
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+function start_jenv {
+  [[ ":$PATH:" != *":$HOME/.jenv/bin:"* ]] && export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+}
 
+
+function start_nvm {
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+}
+
+
+function start_pyenv {
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+}

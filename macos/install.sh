@@ -5,10 +5,10 @@
 
 
 # install from brew
-brew install tmux wget vim tmux-xpanes ag tree pass tig cmake make fd
+brew install tmux wget vim tmux-xpanes ag tree pass tig cmake make fd pwgen jq mas
 
 # install from brew cask
-brew install --cask google-chrome alacritty macvim spectacle visual-studio-code notion
+brew install --cask google-chrome alacritty macvim spectacle visual-studio-code notion caffeine
 
 # install candidates
 # brew install --cask karabiner-elements
