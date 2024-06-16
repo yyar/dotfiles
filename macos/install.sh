@@ -5,7 +5,8 @@ sudo xcodebuild -license accept
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/yyar/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/yyar/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 
@@ -15,11 +16,13 @@ brew install tmux wget vim tmux-xpanes ag tree pass tig cmake make fd pwgen jq m
 brew install bash # for tmux-fzf-url
 
 # install from brew cask
-brew install --cask google-chrome alacritty macvim spectacle visual-studio-code notion caffeine
+brew install --cask google-chrome alacritty visual-studio-code notion caffeine rectangle
 
 # install candidates
 # brew install --cask karabiner-elements
 
+# for vim setting
+# brew install --cask macvim
 
 mkdir -p "$HOME/Library/KeyBindings"
 ln -s `pwd`/DefaultkeyBinding.dict "$HOME/Library/KeyBindings/DefaultkeyBinding.dict"
