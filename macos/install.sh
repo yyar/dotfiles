@@ -22,7 +22,7 @@ brew install --cask google-chrome alacritty visual-studio-code notion caffeine r
 # brew install --cask karabiner-elements
 
 # for vim setting
-# brew install --cask macvim
+brew install --cask macvim --force
 
 mkdir -p "$HOME/Library/KeyBindings"
 ln -s `pwd`/DefaultkeyBinding.dict "$HOME/Library/KeyBindings/DefaultkeyBinding.dict"
